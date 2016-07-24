@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cloudlogin"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    >
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+
+        />
+
+    <Button
+        android:id="@+id/button_step_1"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:onClick="onCreateReferenceClick"
+        android:text="@string/step_1_create_a_reference" />
+
+    <Button
+        android:id="@+id/button_step_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:onClick="onCreateDirectoryClick"
+        android:text="@string/step_2_create_a_directory" />
+
+    <Button
+        android:id="@+id/button_step_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:onClick="onUploadFileClick"
+        android:text="@string/step_3_upload_a_file" />
+
+    <Button
+        android:id="@+id/button_step_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:onClick="onDownloadFileClick"
+        android:text="@string/step_4_download_a_file" />
+
+    <Button
+        android:id="@+id/button_step_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:onClick="onDeleteFileClick"
+        android:text="@string/step_5_delete_a_file" />
+
+</LinearLayout>
+

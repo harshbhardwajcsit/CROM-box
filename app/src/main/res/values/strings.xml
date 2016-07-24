@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Love</string>
+    <string name="action_settings">Settings</string>
+    <string name="enter">ENTER</string>
+    <string name="user_name">User name</string>
+    <string name="step_1_create_a_reference" />
+    <string name="step_2_create_a_directory" />
+    <string name="step_3_upload_a_file" />
+    <string name="step_4_download_a_file" />
+    <string name="step_5_delete_a_file" />
+</resources>
