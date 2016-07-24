@@ -25,7 +25,6 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.firebase.client.Firebase;
-import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -81,7 +80,7 @@ public class MainActivity extends AppCompatActivity{
         intent.addFlags(Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
         startActivityForResult(intent, REQUEST_CODE_PICK_IMAGE);*/
         Intent i = new Intent(
-                Action.ACTION_PICK,
+                Intent.ACTION_PICK,
                 android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         i.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);//to select multiple images
 //pass result back to startActivity
@@ -166,7 +165,7 @@ public class MainActivity extends AppCompatActivity{
      * @param view
      */
     public void onCreateReferenceClick(View view) {
-        mStorageReference = mFirebaseStorage.getReferenceFromUrl("gs://healthcare-df667.appspot.com");
+        mStorageReference = mFirebaseStorage.getReferenceFromUrl("gs://crombox-bd22b.appspot.com");
         showToast("Reference Created Successfully.");
         findViewById(R.id.button_step_2).setEnabled(true);
     }
